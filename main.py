@@ -24,7 +24,7 @@ class MainTestCases():
         options = Options()
         options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        self.driver = webdriver.Firefox(service=Service(ChromeDriverManager().install()), options=options)
+        #self.driver = webdriver.Firefox(service=Service(ChromeDriverManager().install()), options=options)
 
     def url(self):
         self.driver.get("https://www.neuralnine.com/")
